@@ -1,3 +1,4 @@
+package Day1;
 import java.util.Random;
 
 import javax.swing.JOptionPane;
@@ -46,6 +47,7 @@ public class MagicEightBall {
 		}
 		if (random == (7)) {
 			JOptionPane.showMessageDialog(null, "Well, of course! I thought you already knew...");
+
 		}
 		// -- write your own answer
 	}
