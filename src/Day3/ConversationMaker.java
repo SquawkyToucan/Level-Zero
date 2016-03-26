@@ -7,6 +7,7 @@ public class ConversationMaker {
 		for (int i = 0;true; i++) {
 			String talk = JOptionPane.showInputDialog("What do you want the computer to say?");
 			speak(talk);
+			System.out.println(i);
 		}
 	}
 
