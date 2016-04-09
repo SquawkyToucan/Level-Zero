@@ -1,13 +1,15 @@
-package Day5;
+package Day6;
 
 import java.awt.Color;
 
 import javax.swing.JOptionPane;
 
 import org.teachingextensions.logo.Tortoise;
+import org.teachingextensions.logo.Turtle.Animals;
 
 public class TurtleColorChooser {
 	public static void main(String[] args) {
+		Tortoise.setAnimal(Animals.Turtle);
 		Tortoise.show();
 		Tortoise.setSpeed(10);
 		Tortoise.setX(125);
@@ -49,6 +51,8 @@ public class TurtleColorChooser {
 			}
 			Tortoise.turn(45);
 			Tortoise.move(50);
+			System.out.println(i);
 		}
 	}
 }
+//This is a single line comment!
