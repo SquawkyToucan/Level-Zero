@@ -5,7 +5,22 @@ import javax.swing.JOptionPane;
 public class MorningBrown {
 public static void main(String[] args){
 	String day = JOptionPane.showInputDialog("What day of the week is it?");
-	if(day.equalsIgnoreCase("Monday")&&)
+	String school = JOptionPane.showInputDialog("Do you have school?");
+	if(day.equalsIgnoreCase("Monday")||day.equalsIgnoreCase("Tuesday")||day.equalsIgnoreCase("Wednesday")||day.equalsIgnoreCase("Thursday")||day.equalsIgnoreCase("Friday")&&school.equalsIgnoreCase("Yes")){
+		School();
+	}
+	else{
+		if(day.equalsIgnoreCase("Saturday")||day.equalsIgnoreCase("Sunday")){
+			String stuffInMorning = JOptionPane.showInputDialog("Do you have anything in the morning?");
+			if(stuffInMorning.equalsIgnoreCase("yes")){
+				NoSchoolStuffInMorning();
+			}
+			else{
+				NoSchoolNothingInMorning();
+			}
+			
+		}
+	}
 }
 static void NoSchoolNothingInMorning() {
 		speak("Lay in bed until Ian wakes you up.");
