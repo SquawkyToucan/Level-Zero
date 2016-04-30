@@ -20,7 +20,6 @@ public class SafeCracker {
 		System.out.println("trying " + guess);
 
 		int secretCode = 201761 - wekncrzpasfdkjhcfjse;
-
 		if (guess == secretCode) {
 			JOptionPane.showMessageDialog(null, "Congratulations! You cracked the safe with " + guess);
 			playTheSoundOfSuccess();
