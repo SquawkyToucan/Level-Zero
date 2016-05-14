@@ -3,7 +3,8 @@ import javax.swing.JOptionPane;
 import java.util.*;
 
 public class Donald_TheGame {
-public static void main(String[] args){
+public static void main(String[] args){/*TaskList: Marco Rubio (/lie), Ted Cruz (/lie), and Bernie Sanders (/china) before facing Hillary Clinton */
+	int gamePoints = 0;
 	int score = 0;
 	int cash = 0;
 	JOptionPane.showMessageDialog(null, "You are about to take the test of Donaldia. Enter at your own risk.");
@@ -48,9 +49,66 @@ public static void main(String[] args){
 		JOptionPane.showMessageDialog(null, "You're worth 10 billion.");
 		cash = cash + 10000;
 	}
+	
 	//The game begins here!
-	int gamePoints = 0;
+	
 	JOptionPane.showMessageDialog(null, "Welcome to Donald: The Game. Use /lie, /cheat, and /china to win the race. You will start off with this amount of money(in millions): " + cash);
+	String respondToCarson = JOptionPane.showInputDialog("Attack: Ben Carson understands government, unlike Donald Trump. \nRespond with /lie, /cheat, or /china.");
+	// Lie gets 0, Cheat gets 1 and China gets 0
+	if(respondToCarson.equalsIgnoreCase("/lie")){
+		Random rand = new Random();
+		int respondtoevilcarson = rand.nextInt(3); 
+		if(respondtoevilcarson == 0){
+			JOptionPane.showMessageDialog(null, "Ben Carson is a quack who hasn't cured a single person.");
+		}
+		if(respondtoevilcarson == 1){
+			JOptionPane.showMessageDialog(null, "Carson wants to become allies with North Korea!");
+		}
+		if(respondtoevilcarson == 2){
+			JOptionPane.showMessageDialog(null, "Ben Carson is an idiot and he likes ISIS.");
+		}
+	}
+	if(respondToCarson.equalsIgnoreCase("/cheat")){
+		Random rand = new Random();
+		int respondtoevilcarson = rand.nextInt(3); 
+		if(respondtoevilcarson == 0){
+			JOptionPane.showMessageDialog(null, "You bribed caucus voters and won a debate, causing you to win a landslide in New Hampshire. Plus one point.");
+			gamePoints++;
+			if(gamePoints == 3){
+				JOptionPane.showMessageDialog(null, "You won and are now the supreme ruler of the world.");
+				System.exit(0);
+			}
+		}
+		if(respondtoevilcarson == 1){
+			JOptionPane.showMessageDialog(null, "You sabotage Carson's tires and claim that it was because he was unprepared... Plus one point.");
+			gamePoints++;
+			if(gamePoints == 3){
+				JOptionPane.showMessageDialog(null, "You have taken control and have declared yourself dictator.");
+				System.exit(0);
+			}
+		}
+		if(respondtoevilcarson == 2){
+			JOptionPane.showMessageDialog(null, "You break into the office of the caucus and release false information, claiming you won. Plus one point.");
+			gamePoints++;
+			if(gamePoints == 3){
+				JOptionPane.showMessageDialog(null, "You take control and arrest everyone who speaks out.");
+				System.exit(0);
+			}
+		}
+	}
+	if(respondToCarson.equalsIgnoreCase("/china")){
+		Random rand = new Random();
+		int respondtoevilcarson = rand.nextInt(3); 
+		if(respondtoevilcarson == 0){
+			JOptionPane.showMessageDialog(null, "Climate Change was created by China and for China!");
+		}
+		if(respondtoevilcarson == 1){
+			JOptionPane.showMessageDialog(null, "China's military is trying to take over while we sit here and do nothing.");
+		}
+		if(respondtoevilcarson == 2){
+			JOptionPane.showMessageDialog(null, "The Chinese economy is overtaking us. I will send them down.");
+		}
+	}
 		String respondToHillary = JOptionPane.showInputDialog("Attack: Hillary for America. Better than racist Trump. \nRespond with /lie, /cheat, or /china.");
 		// Lie gets 0, Cheat gets 1 and China gets 0
 		if(respondToHillary.equalsIgnoreCase("/lie")){
@@ -70,7 +128,7 @@ public static void main(String[] args){
 			Random rand = new Random();
 			int respondtoevilhillary = rand.nextInt(3); 
 			if(respondtoevilhillary == 0){
-				JOptionPane.showMessageDialog(null, "You bribed caucus voters and won Alaska. Plus one point.");
+				JOptionPane.showMessageDialog(null, "You bribed electoral voters and won Alaska. Plus one point.");
 				gamePoints++;
 				if(gamePoints == 3){
 					JOptionPane.showMessageDialog(null, "You won and are now the supreme ruler of the world.");
@@ -86,7 +144,7 @@ public static void main(String[] args){
 				}
 			}
 			if(respondtoevilhillary == 2){
-				JOptionPane.showMessageDialog(null, "You break into the office of the caucus and release false information, claiming you won. Plus one point.");
+				JOptionPane.showMessageDialog(null, "You break into the office of the vote in Manhattan and release false information, claiming you won. Plus one point.");
 				gamePoints++;
 				if(gamePoints == 3){
 					JOptionPane.showMessageDialog(null, "You take control and arrest everyone who speaks out.");
