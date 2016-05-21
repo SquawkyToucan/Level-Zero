@@ -1,6 +1,6 @@
 float r = 0.1;
 boolean plus, minus = false;
-
+//This is the Amazing Rings Project
 void setup(){
   size(800,500);
   smooth(8);
