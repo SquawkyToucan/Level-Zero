@@ -8,6 +8,7 @@ public class ObeidientTortoise {
 public static void main(String[] args){
 	for (int i = 0;true ; i++) {
 	Tortoise.show();
+	Tortoise.explode();
 	Tortoise.penDown();
 	Tortoise.setSpeed(10);
 	String shape = JOptionPane.showInputDialog("What shape do you want the Tortoise to draw? (Choose from circle, triangle, or square.)");
